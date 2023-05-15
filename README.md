@@ -1,4 +1,4 @@
-# Python-InstaCart-Basket-Analysis
+# Python-Project-For-CareerFoundry
 Python Code for Instacart Basket Analysis 
 
 # Python Instacart Basket Analysis
