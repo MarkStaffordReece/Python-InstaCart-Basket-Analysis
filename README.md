@@ -1,6 +1,3 @@
-# Python-Project-For-CareerFoundry
-Python Code for Instacart Basket Analysis 
-
 # Python Instacart Basket Analysis
 
 ![image](https://github.com/MarkStaffordReece/Python-InstaCart-Basket-Analysis/assets/133573550/47521cd0-321d-4416-8721-2a4e173ce104)
