@@ -64,7 +64,7 @@ For this project, the following python libaries were used:
 
 • scipy - mathematical functions and algorithms for numerical operations
 
-## Exceuting Code
+## Executing Code
 The code is available as jupyter notbooks, available under /scripts/.
 To launch the notebook, open terminal and run the command: 
 
