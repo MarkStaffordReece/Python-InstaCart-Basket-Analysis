@@ -72,7 +72,7 @@ To launch the notebook, open terminal and run the command:
 • generate Crosstabs: jupyter notebook createCrossTabs.ipynb
 
 ## Resources
-Relevant reources will be posted here. 
+Relevant resources will be posted here. 
 www.CareerFoundry.com 
 
 
