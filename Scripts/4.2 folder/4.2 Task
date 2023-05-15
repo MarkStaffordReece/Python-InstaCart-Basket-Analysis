@@ -1,0 +1,349 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "059571cc-3f87-4607-9aab-5117898955b5",
+   "metadata": {},
+   "source": [
+    "Import Libraries"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "9ac8d3a5-4283-4901-9854-f0f543e0dd0b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import pandas as pd"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "619d6558-4a46-4085-9f2a-dfc1d0d99f9c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "3bfcb510-3eac-4cb4-9611-12dc7ce83a65",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import os"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b88567c7-61a8-4239-8d7c-5dfa6b3188da",
+   "metadata": {},
+   "source": [
+    "Python Data Types "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5106e939-0d27-47c2-b7cd-ba263d69d7ba",
+   "metadata": {},
+   "source": [
+    "Code 3 different ways of reaching a result of 100 by adding or subtracting numeric variables."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "e2be0f26-df42-4f61-a58b-2104fd257819",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x=100"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "b4620f08-813c-4494-a80c-99d5a95d56d5",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "int"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "350d8332-1005-439f-a003-273656dc7757",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "y=200"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "9b3edabb-ae12-4688-a111-57aeeec324e2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "100\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(y-x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "a9639b8a-c151-4577-86b5-55ab062412af",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "c=y-x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "6c60cf29-a9f2-44a9-948d-17bd2755261f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "100\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(c)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "916d0066-dcb3-42e1-986a-1595759ba6c8",
+   "metadata": {},
+   "source": [
+    "Code 2 floating-point variables and divide them by each other."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "8fa937f2-8f74-4925-930d-d757a9f93b74",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "b=3.4"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "7bffccf6-2c69-4428-97bb-e88faa40b844",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "d= 5.4"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "f0541184-2848-4c7d-b426-df74be1699cd",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "float"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "82533a7d-acd9-4e08-8794-a6af5e34785d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "float"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(d)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "2460b5e1-423a-4c73-9dd6-ce2e483b8ff4",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "18.51851851851852\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(c/d)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b80d321e-9caa-41bf-a1b8-53449f74e70a",
+   "metadata": {},
+   "source": [
+    "Construct a short word made of separate strings"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "ca3e5bf8-150c-4c46-ac5a-752fd0a0360d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x = 'Python '"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "6215bd24-8313-438a-99e3-7a57db897dcd",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "z = ' rocks!'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "0d2ee5ca-f609-4663-b996-d9685f17709c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "' rocks!Python '"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "z + x"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "112bc76a-46c2-4897-8541-4cfcf2dca5d9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "string = \"hello\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "82a8cc29-ad28-4f81-9343-d8d8bf5e7ad7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "result = string * 100"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "14a9d298-891f-4732-851b-965fc43b8cc9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohellohello\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cc39584a-cdba-4959-ac8c-4e0a52150170",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
